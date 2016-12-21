@@ -1,8 +1,8 @@
 # slack2sms
-Slack to sms and back
+Instructions to setup your very own slack2sms bot:
 
 Make sure the proper libraries are installed 
-        $ pip install slackclient twilio flask
+        `$ pip install slackclient twilio flask`
    
 Webhook:   
 Run ngrok to create you're webhook and copy the forwarding https: ex. https://4ee379f8.ngrok.io
