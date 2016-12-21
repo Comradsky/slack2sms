@@ -1,12 +1,30 @@
 # slack2sms
 Slack to sms and back
 
-1 To trigger the slack bot to send something contain one of these in the message
-        @twilio, @twiliobot, @textbot,  @sms, @smsbot, @text        
+Make sure the proper libraries are installed 
+        $ pip install slackclient twilio flask
+   
+Webhook:   
+Run ngrok to create you're webhook and copy the forwarding https: ex. https://4ee379f8.ngrok.io
+   
+Setup Slack   
+Generate slack tokens for a team you have admin priveleges on and save it to put into the slack2sms.py later (SLACK_TOKEN)
+Go to outgoing webhooks and under URLs put your ngrok https and add /slack to the end
+ex. https://4ee379f8.ngrok.io/slack
+And then save the webhook token on the same page (SLACK_WEBHOOK_SECRET)
+Also enter your trigger words, ex. @twilio, @sms, @text, @twiliobot, @smsbot, @textbot
+
+Configure Twilio
+Get your account sid (TWILIO_ACCOUNT_SID) and your twilio token (TWILIO_AUTH_TOKEN)
+Also enter in your twilio trigger wor
+Set up your twilio phone number
+
+Using the app:
+Enter in the required keys near the top of the slack2sms.py, also enter youre twilio number and your user number.
+
+To send to a number it must fist be varified on twilio since if its a free account, but otherwise you can send a message to any number if it's a payed account or the number is already registered
         
-2 To send to a number it must fist be varified on twilio since its a free account
-        start the phone number with #
-With this functionality you could send a slack to any number but since my Twilio account is a free version in order to send to a specific number it must first be added through the twilio website under the 'Verified Caller IDs' section
+In slack: start with @sms and then anywhere in the message include the phone number you want to send to starting with a #
         
         
 Example:
