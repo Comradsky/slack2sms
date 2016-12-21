@@ -8,15 +8,15 @@ Webhook:
 Run ngrok to create you're webhook and copy the forwarding https: ex. https://4ee379f8.ngrok.io
    
 Setup Slack   
-Generate slack tokens for a team you have admin priveleges on and save it to put into the slack2sms.py later (SLACK_TOKEN).
+Generate slack tokens for a team you have admin priveleges on and save it to put into the slack2sms.py later (`SLACK_TOKEN`).
 Go to outgoing webhooks and under URLs put your ngrok https and add /slack to the end
 ex. https://4ee379f8.ngrok.io/slack
-And then save the webhook token on the same page (SLACK_WEBHOOK_SECRET).
+And then save the webhook token on the same page (`SLACK_WEBHOOK_SECRET`).
 Also enter your trigger words, ex. @twilio, @sms, @text, @twiliobot, @smsbot, @textbot.
 
 Configure Twilio
 Set up your twilio phone number.
-Get your account sid (TWILIO_ACCOUNT_SID) and your twilio token (TWILIO_AUTH_TOKEN).
+Get your account sid (`TWILIO_ACCOUNT_SID`) and your twilio token (`TWILIO_AUTH_TOKEN`).
 Also go to the web hook, select https webhook and enter in your ngrok + /twilio ex. https://4ee379f8.ngrok.io/twilio
 
 
