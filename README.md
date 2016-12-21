@@ -15,9 +15,10 @@ And then save the webhook token on the same page (SLACK_WEBHOOK_SECRET)
 Also enter your trigger words, ex. @twilio, @sms, @text, @twiliobot, @smsbot, @textbot
 
 Configure Twilio
-Get your account sid (TWILIO_ACCOUNT_SID) and your twilio token (TWILIO_AUTH_TOKEN)
-Also enter in your twilio trigger wor
 Set up your twilio phone number
+Get your account sid (TWILIO_ACCOUNT_SID) and your twilio token (TWILIO_AUTH_TOKEN)
+Also go to the web hook, select https webhook and enter in your ngrok + /twilio ex. https://4ee379f8.ngrok.io/twilio
+
 
 Using the app:
 Enter in the required keys near the top of the slack2sms.py, also enter youre twilio number and your user number.
@@ -30,9 +31,10 @@ In slack: start with @sms and then anywhere in the message include the phone num
 Example:
 
 (slack)skylerhill [4:19 PM]  
-@sms #5124122438 this could work * 8
+@sms #5124122438 this could work
 
-received sms: 'Sent from your Twilio trial account - skylerhill in general says:   this could work * 8’
-    
+received sms: 'Sent from your Twilio trial account - skylerhill in general says:   this could work’    
     
 The program cuts out the @insert_bot_name and #1234567 to make the message shorter
+
+To respond to the bot on the phone number just text back.
