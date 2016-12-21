@@ -2,7 +2,7 @@
 Slack to sms and back
 
 1 To trigger the slack bot to send something contain one of these in the message
-        @twiliobot, @textbot,  @sms, @smsbot, @sms_bot
+        @twilio, @twiliobot, @textbot,  @sms, @smsbot, @text        
         
 2 To send to a number it must fist be varified on twilio since its a free account
         start the phone number with #
