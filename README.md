@@ -31,7 +31,7 @@ In slack: start with @sms and then anywhere in the message include the phone num
 Example:
 
 (slack)skylerhill [4:19 PM]  
-@sms #5124122438 this could work
+@sms #5121234567 this could work
 
 received sms: 'Sent from your Twilio trial account - skylerhill in general says:   this could work’    
     
