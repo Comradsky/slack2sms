@@ -23,7 +23,7 @@ Also go to the web hook, select https webhook and enter in your ngrok + /twilio 
 Using the app:
 Enter in the required keys near the top of the slack2sms.py, also enter youre twilio number and your user number.
 
-To send to a number it must fist be varified on twilio since if its a free account, but otherwise you can send a message to any number if it's a payed account or the number is already registered.
+To send to a number it must fist be verified on twilio since if its a free account, but otherwise you can send a message to any number if it's a payed account or the number is already registered.
         
 In slack: start with @sms and then anywhere in the message include the phone number you want to send to starting with a #
         
